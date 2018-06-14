@@ -21,7 +21,7 @@ $ git clone https://github.com/Jlabroy/monzo.git
 * Install packages
 
 ```
-$ npm install
+$ yarn install
 ```
 
 ### Developing
@@ -30,13 +30,11 @@ Built with
 
 * [React](https://reactjs.org/docs/hello-world.html)
 
-```
 
 ### Demo
 
-To run a sample application using the checkbox run
+To run a sample application
 
 ```
-$ yarn install
 $ yarn start
 ```
