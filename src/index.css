@@ -2,4 +2,84 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: rgb(20, 35, 60);
+}
+
+input[type=text],
+input[type=password]{
+  background-color: #ffffff;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #14233c;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #00a0d6;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background-color: #008dbd;
+}
+
+button:disabled,
+button:disabled:hover {
+  opacity: 0.5;
+  cursor: default;
+  background-color: #00a0d6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+tr.table__row__link {
+  cursor: pointer;
+}
+
+tr.table__row__link:hover {
+  background-color: #f9f9f9;
+}
+
+.error {
+  background-color: #f09696;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.success {
+  background-color: #9abbaa;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
 }

@@ -1,0 +1,20 @@
+.layout__header {
+    background-color: #14233c;
+}
+
+.layout__header a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+.layout__header a:hover {
+    background-color: rgba(170,178,192,.05);
+}
+
+.layout__main {
+    width: 100%;
+    max-width: 980px;
+    margin: 20px auto;
+}

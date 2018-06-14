@@ -1,0 +1,22 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #14233c;
+    color: #ffffff;
+}
+
+.login .login__form {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.login .login__form input {
+    margin-bottom: 10px;
+}

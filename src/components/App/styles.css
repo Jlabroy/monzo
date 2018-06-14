@@ -1,0 +1,27 @@
+.app__logo {
+    width: 200px;
+    height: 200px;
+}
+
+.app__avatar {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.app__form {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.app__form input {
+    margin: 10px 0;
+}
+
+.app__pagination {
+    margin: 10px 0;
+}
+
+.app__pagination .app__pagination__button:nth-child(1) {
+    margin-right: 10px;
+}

@@ -1,21 +1,22 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link  } from "react-router-dom";
-import Portal from "./components/Portal";
-import Login from "./components/Login";
+import { BrowserRouter as Router, Route  } from "react-router-dom";
+import Layout from "./components/Layout";
+import Apps from "./containers/Apps";
+import App from "./containers/App";
+import Login from "./containers/Login";
 
-class App extends Component {
+class Routes extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
-          <Route exact path="/" component={Portal} />
-          <Route path="/login" component={Login} />
+          <Route exact path="/" component={props => (<Layout><Apps {...props} /></Layout>)} />
+          <Route path="/login" component={props => (<Layout><Login {...props} /></Layout>)} />
+          <Route path="/app/:appId" component={props => (<Layout><App {...props} /></Layout>)} />
         </div>
       </Router>
     );
   }
 }
 
-export default App;
+export default Routes;
